@@ -568,7 +568,8 @@ h4 {
 }
 
 .carousel{
-  padding-top: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .carousel-inner{
@@ -578,14 +579,44 @@ h4 {
   border: .5px solid black;
 }
 
+.carousel-inner img{
+  max-height: 600px;
+  width: auto;
+}
+
 .carousel-control-prev{
-  width: 10%!important;
   background-color: black!important;
-  margin-top: 100px!important;
+  opacity: 1!important;
+  height: 10%;
+  width: 10%;
+  margin-top: 100px;
 }
 
 .carousel-control-next{
-  width: 10%!important;
   background-color: black!important;
-  margin-top: 100px!important;
+  opacity: 1!important;
+  height: 10%;
+  width: 10%;
+  margin-top: 100px;
+}
+
+#external_page_pad{
+  padding-top: 75px;
+}
+
+#TMA_invison{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#made_with_invsion img{
+  padding-top: 50%;
+  margin-right: 25%;
+}
+
+#tma_screen img{
+  width: 75%;
+  margin-left: 25%;
 }

@@ -102,6 +102,11 @@ h4 {
   padding-left: 0!important;
 }
 
+.navbar-brand_back{
+  margin-left: 6%;
+  padding-left: 0!important;
+}
+
 .rightmenu{
   height: 100%;
   width: 23%;
@@ -313,11 +318,11 @@ h4 {
 /* WORK CATEGORIES */
 
 .workcategories{
-    margin-bottom: 30%;
-    margin-right: auto;
-    margin-top: 70px;
-    text-align: center;
-    z-index: 1;
+  margin-bottom: 30%;
+  margin-right: auto;
+  margin-top: 70px;
+  text-align: center;
+  z-index: 1;
 }
 
 .workcategories h2{
@@ -433,7 +438,7 @@ h4 {
 }
 
 
-.active img{
+.active_icon img{
   opacity: 0!important;
 }
 
@@ -470,7 +475,6 @@ h4 {
 }
 
 .heading_wrapper{
-  /* z-index: 25; */
   width: 100%;
   background: black;
   padding-left: 10%;
@@ -479,20 +483,10 @@ h4 {
   padding-right: 25%;
   height: 50px;
 }
-/*
-#heading_sticker1{
-  padding-top: 50px;
-}
-#heading_sticker2{
-  padding-top: 50px;
-}
-#heading_sticker3{
-  padding-top: 50px;
-} */
 
 .heading_wrapper h2{
   font-size: 1.8em;
-    line-height: .7em;
+  line-height: .7em;
 }
 
 
@@ -571,4 +565,27 @@ h4 {
   padding-top: 10px;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
+}
+
+.carousel{
+  padding-top: 100px;
+}
+
+.carousel-inner{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
+  border: .5px solid black;
+}
+
+.carousel-control-prev{
+  width: 10%!important;
+  background-color: black!important;
+  margin-top: 100px!important;
+}
+
+.carousel-control-next{
+  width: 10%!important;
+  background-color: black!important;
+  margin-top: 100px!important;
 }

@@ -38,7 +38,7 @@
 
   </head>
 
-    <body  data-spy="scroll" data-target=".rightmenu">
+    <body  data-spy="scroll" data-target=".projectbutton">
 
       <!-- NAVIGATION_____________ -->
 
@@ -148,32 +148,32 @@
 
   <!-- WORK CATEGORIES   -->
 
-    <div class="workcategories addtopmargin">
-      <div class="row">
-        <div class="col-6 col-sm-3 workitem icon devicon" data=".devtext" data-menu=".devmenu" type="workitem" id="animate1">
+    <div class="workcategories addtopmargin"  data-depth='-.5' data-type='parallax'>
+      <div class="row" id="projectslink2">
+        <div class="col-6 col-sm-3 workitem icon devicon" id="animate1">
             <div class="workitemwrapper">
-              <img src="img/deviconcolor.svg" class="img-fluid" id="dev">
+              <img src="img/deviconcolor.svg" class="img-fluid " id="dev">
             </div>
             <h2>Dev</h2>
             <h3>Coding is awesome!</h3>
         </div>
-        <div class="col-6 col-sm-3 workitem icon uxicon" data-menu=".uxmenu" data=".uxtext" type="workitem" id="animate2">
+        <div class="col-6 col-sm-3 workitem icon uxicon" id="animate2">
             <div class="workitemwrapper">
               <img src="img/uxiconcolor.svg" class="img-fluid" id="ux">
             </div>
             <h2>UX/UI</h2>
             <h3>A Passion For Interaction!</h3>
         </div>
-        <div class="col-6 col-sm-3 workitem icon desicon"  data-menu=".desmenu" data=".destext" type="workitem" id="animate3">
+        <div class="col-6 col-sm-3 workitem icon desicon" id="animate3">
             <div class="workitemwrapper">
               <img src="img/designiconcolor.svg" class="img-fluid" id="des">
             </div>
             <h2>Graphics</h2>
             <h3>Colors and fonts and all that!</h3>
         </div>
-        <div class="col-6 col-sm-3 workitem icon gamesicon" data-menu=".gamesmenu" data=".gamestext" type="workitem" id="animate4">
+        <div class="col-6 col-sm-3 workitem icon gamesicon" id="animate4">
             <div class="workitemwrapper">
-              <img src="img/gamesiconcolor.svg" class="img-fluid" id="games">
+              <img src="img/gamesiconcolor.svg" class="img-fluid project" id="games">
             </div>
             <h2>Games</h2>
             <h3 id="projects">Fun to play, hard to make</h3>
@@ -181,155 +181,172 @@
       </div><!-- end row -->
     </div>
 
+  </div><!-- inner content end -->
 
-    <footer class="footer">
-      <p>COPYRIGHT 2018 STR Design & Dev</p>
-    </footer>
 
 
 <!-- START PORTFOLIO CONTENT -->
 
-    <section class="portfolio">
-      <div>
-        <div id="heading_sticker1">
-          <div class="heading_wrapper" id="project_stick">
-            <h2>PROJECTS</h2>
-          </div>
-        </div>
-        <div class="section_wrapper" id="projectssection">
-          <div class="section_wrapper_wrapper">
-            <img src="img/themovieapp.jpg" class="img-fluid projectimg">
-            <img src="img/themovieapp.jpg" class="img-fluid projectimg">
-            <img src="img/themovieapp.jpg" class="img-fluid projectimg">
-            <img src="img/themovieapp.jpg" class="img-fluid projectimg">
-          </div>
+  <section class="portfolio">
+    <div  id="project_scoll">
+      <div id="heading_sticker1">
+        <div class="heading_wrapper" id="project_stick">
+          <h2>PROJECTS</h2>
         </div>
       </div>
-
-      <div>
-        <div id="heading_sticker2">
-          <div class="heading_wrapper" id="about_stick">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="section_wrapper"  id="aboutsection">
-          <div class="section_wrapper_wrapper">
-            <div class="row">
-              <div id="bio" class="col-sm">
-                <h2>Bio</h2>
-                <p>I'm a web developer, creative, and maker. Art drives me, interaction excites me, and I strive to know the nuts and bolts that move the machines of the things I love.</p>
-                <h2>Interests</h2>
-                <p>Code, art, music, woodworking, family, tacos, dogs, guitars, video games, board games, beer, crafts, comedy, cartoons.</p>
-                <h2>My Skills</h2>
-                <table id="skills_table" class="col-sm">
-                  <tr>
-                    <td>HTML5</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="html5">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>CSS</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="css">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>RUBY</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="ruby">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>JAVASCRIPT</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="javascript">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>JQUERY</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="jQuery">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>ADOBE CC</td>
-                    <td class="bar">
-                      <div class="bar_border">
-                        <div class="inner_skills" id="adobe">
-                          .
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div>
-                <img id="mepic" src="img/me_cropped.jpg" class="img-fluid projectimg">
-              </div>
+      <div class="section_wrapper" id="projectssection">
+        <div class="section_wrapper_wrapper">
+          <div class="row project_descrition">
+            <div class="col-md-6">
+              <img src="img/themovieapp.jpg" class="img-fluid projectimg">
+              <h2>UX Research & UI Prototype</h2>
+              <h3>Technology Used: Adobe CC, Sketch, InVision</h3>
+            </div>
+            <div class="col-md-6">
+              <img src="img/lb_responsive_site.jpg" class="img-fluid projectimg">
+              <h2>Responsive Information Site</h2>
+              <h3>Technology Used: Bootstrap, HTML5, CSS, Adobe CC</h3>
+            </div>
+            <div class="col-md-6">
+              <img src="img/Graphic_Design_Gallery.jpg" class="img-fluid projectimg">
+              <h2>Graphic Design Gallery</h2>
+              <h3>Technology Used: Photoshop, Illustrator, InDesign</h3>
+            </div>
+            <div class="col-md-6">
+              <img src="img/themovieapp.jpg" class="img-fluid projectimg">
+            </div>
+            <div class="col-md-6">
+              <img src="img/themovieapp.jpg" class="img-fluid projectimg">
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div>
-        <div id="heading_sticker3">
-          <div class="heading_wrapper" id="contact_stick">
-            <h2>Contact Me</h2>
-          </div>
+    <div>
+      <div id="heading_sticker2">
+        <div class="heading_wrapper" id="about_stick">
+          <h2>ABOUT ME</h2>
         </div>
-        <div class="section_wrapper" id="contactsection">
-          <div class="section_wrapper_wrapper">
-            <form action="/action_page.php" id="contactform">
-              <p>First name:</p>
-              <input type="text" name="firstname" value="First Name">
-              <p>Last Name:</p>
-              <input type="text" name="lastname" value="Last Name">
-              <input type="submit" value="Submit">
-              <p>E-Mail:</p>
-              <input type="text" name="lastname" value="E-Mail">
-              <input type="submit" value="Submit">
-            </form>
-            <form action="/action_page.php" id="contactform">
-              <p>First name:</p>
-              <input type="text" name="firstname" value="First Name">
-              <p>Last Name:</p>
-              <input type="text" name="lastname" value="Last Name">
-              <input type="submit" value="Submit">
-              <p>E-Mail:</p>
-              <input type="text" name="lastname" value="E-Mail">
-              <input type="submit" value="Submit">
-            </form>
+      </div>
+      <div class="section_wrapper"  id="aboutsection">
+        <div class="section_wrapper_wrapper">
+          <div class="row">
+            <div id="bio" class="col-md-6">
+              <h2>Bio</h2>
+              <p>I'm a web developer, creative, and maker. Art drives me, interaction excites me, and I strive to know the nuts and bolts that move the machines of the things I love.</p>
+              <h2>Interests</h2>
+              <p>Code, art, music, woodworking, family, tacos, dogs, guitars, video games, board games, beer, crafts, comedy, cartoons.</p>
+              <h2>My Skills</h2>
+              <table id="skills_table">
+                <tr>
+                  <td>HTML5</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="html5">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="css">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>RUBY</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="ruby">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>JAVASCRIPT</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="javascript">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>JQUERY</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="jQuery">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ADOBE CC</td>
+                  <td class="bar">
+                    <div class="bar_border">
+                      <div class="inner_skills" id="adobe">
+                        .
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-md-6">
+              <img id="mepic" src="img/me_cropped.jpg" class="img-fluid projectimg">
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-
-
-  </div><!-- inner content end -->
+    <div>
+      <div id="heading_sticker3">
+        <div class="heading_wrapper" id="contact_stick">
+          <h2>CONTACT ME</h2>
+        </div>
+      </div>
+      <div class="section_wrapper" id="contactsection">
+        <div class="section_wrapper_wrapper">
+          <form action="/action_page.php" id="contactform">
+            <p>First name:</p>
+            <input type="text" name="firstname" value="First Name">
+            <p>Last Name:</p>
+            <input type="text" name="lastname" value="Last Name">
+            <input type="submit" value="Submit">
+            <p>E-Mail:</p>
+            <input type="text" name="lastname" value="E-Mail">
+            <input type="submit" value="Submit">
+          </form>
+          <form action="/action_page.php" id="contactform">
+            <p>First name:</p>
+            <input type="text" name="firstname" value="First Name">
+            <p>Last Name:</p>
+            <input type="text" name="lastname" value="Last Name">
+            <input type="submit" value="Submit">
+            <p>E-Mail:</p>
+            <input type="text" name="lastname" value="E-Mail">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div><!-- WRAPPER END -->
+
+<footer class="footer">
+  <p>COPYRIGHT 2018 STR Design & Dev</p>
+</footer>
 
 
       <!-- bootstrap core js -->

@@ -4,18 +4,18 @@ var page_isolated = false;
 
 
 
-$( "#projectslink" ).on('click', function() {
+$( "#projectslink, #projectslink2" ).on('click', function() {
     $('#projectssection').delay(800).fadeIn();
     $('#aboutsection').fadeOut();
     $('#contactsection').fadeOut();
     $('.workcategories').hide(500);
     $('.introcontent').hide(500);
     $('.introcontent2').hide(500);
-    $('#heading_sticker1').delay(800).fadeIn();
+    $('#heading_sticker1').delay(1000).fadeIn();
     $('#heading_sticker2').fadeOut();
     $('#heading_sticker3').fadeOut();
     page_isolated = true;
-    $('.section_wrapper').css('padding-top', '0px');
+    $('.section_wrapper').css('padding-top', '50px');
 });
 
 $( "#aboutlink" ).on('click', function() {
@@ -26,10 +26,10 @@ $( "#aboutlink" ).on('click', function() {
     $('.introcontent').hide(500);
     $('.introcontent2').hide(500);
     $('#heading_sticker1').fadeOut();
-    $('#heading_sticker2').delay(800).fadeIn();
+    $('#heading_sticker2').delay(1000).fadeIn();
     $('#heading_sticker3').fadeOut();
     page_isolated = true;
-    $('.section_wrapper').css('padding-top', '0px');
+    $('.section_wrapper').css('padding-top', '50px');
 });
 
 $( "#contactlink" ).on('click', function() {
@@ -41,9 +41,9 @@ $( "#contactlink" ).on('click', function() {
     $('.introcontent2').hide(500);
     $('#heading_sticker1').fadeOut();
     $('#heading_sticker2').fadeOut();
-    $('#heading_sticker3').delay(800).fadeIn();
+    $('#heading_sticker3').delay(1000).fadeIn();
     page_isolated = true;
-    $('.section_wrapper').css('padding-top', '0px');
+    $('.section_wrapper').css('padding-top', '50px');
 });
 
 $( "#homelink" ).on('click', function() {
@@ -57,7 +57,7 @@ $( "#homelink" ).on('click', function() {
     $('#heading_sticker2').show();
     $('#heading_sticker3').show();
     page_isolated = false;
-    $('.section_wrapper').css('padding-top', '100px');
+    $('.section_wrapper').css('padding-top', '76px');
 });
 
 // Set up listeners for screen size
@@ -189,7 +189,7 @@ window.addEventListener('scroll', function() {
   var skills_table = document.getElementById('skills_table');
   var distanceToTopSkillsTable = skills_table.getBoundingClientRect().top;
 
-  if (distanceToTopSkillsTable < 300){
+  if (distanceToTopSkillsTable < 400){
       $("#html5").animate({width: '90%'});
       $("#css").delay(100).animate({width: '80%'});
       $("#ruby").delay(200).animate({width: '50%'});
@@ -198,3 +198,19 @@ window.addEventListener('scroll', function() {
       $("#adobe").delay(500).animate({width: '80%'});
     }
 });
+
+
+// Smooth scrolling
+
+var $root = $('html, body');
+          $('.workcategories a').click(function() {
+            var href = $.attr(this, 'href');
+            if (href != undefined && href != '#') {
+              $root.animate({
+                scrollTop: $(href).offset().top
+              }, 500, function () {
+                window.location.hash = href;
+              });
+            }
+            return false;
+          });

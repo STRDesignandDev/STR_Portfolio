@@ -17,7 +17,8 @@
 
 p{
   font-family: 'Raleway', sans-serif;
-  font-size: .8em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 h1{
@@ -45,6 +46,11 @@ h4 {
   font-size: .7em;
 }
 
+label{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: .9em;
+}
 
 .innercontent{
   margin-right: 18%;
@@ -55,10 +61,24 @@ h4 {
 .col-md-6{
   padding-left: 0!important;
   padding-right: 50px!important;
-  padding-bottom: 25px!important;
+  padding-bottom: 15px!important;
 }
 
+.col-md-4{
+  padding-left: 0!important;
+  padding-right: 50px!important;
+  padding-bottom: 15px!important;
+}
 
+.col-lg-3{
+  padding-left: 0!important;
+  padding-right: 50px!important;
+  padding-bottom: 15px!important;
+}
+
+.row{
+  margin-left: 0!important;
+}
 
 
 /* NAVIGATION */
@@ -415,24 +435,7 @@ h4 {
   background-size: cover;
 } */
 
-#dev{
-  background: url("../img/colorback.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#ux{
-  background-image: url("../img/colorback.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-#des{
-  background-image: url("../img/colorback.jpg");
-  background-size: cover;
-}
-
-#games{
+#color_back{
   background-image: url("../img/colorback.jpg");
   background-size: cover;
 }
@@ -619,4 +622,69 @@ h4 {
 #tma_screen img{
   width: 75%;
   margin-left: 25%;
+}
+
+
+#messagethanks{
+  display: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.textarea label{
+  display: block;
+}
+
+
+.btn-submit{
+  background-color: black!important;
+  border: none;
+  float: right;
+  margin-right: 35px;
+  margin-top: 15px;
+}
+
+#message_pad{
+  padding-right: 35px!important;
+}
+
+.msgarea{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.form-control{
+  border-radius: 0!important;
+  border: .1px solid black;
+}
+
+.form-control:focus{
+  border-color: black;
+  box-shadow: 5px 15px 5px #aaaaaa;
+}
+
+#center_row{
+  margin-left: 20%!important;
+  width: 50%;
+  padding-top: 25px;
+}
+
+input {
+    border: none;
+    width: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: .9em;
+    padding-top: none;
+    display: inline-block;
+}
+
+button{
+  background-color: black!important;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: .9em;
 }

@@ -127,28 +127,28 @@
       <div class="row" id="projectslink2">
         <div class="col-6 col-sm-3 workitem icon devicon" id="animate1">
             <div class="workitemwrapper">
-              <img src="img/deviconcolor.svg" class="img-fluid " id="dev">
+              <img src="img/deviconcolor.svg" class="img-fluid " id="color_back">
             </div>
             <h2>Dev</h2>
             <h3>Coding is awesome!</h3>
         </div>
         <div class="col-6 col-sm-3 workitem icon uxicon" id="animate2">
             <div class="workitemwrapper">
-              <img src="img/uxiconcolor.svg" class="img-fluid" id="ux">
+              <img src="img/uxiconcolor.svg" class="img-fluid" id="color_back">
             </div>
             <h2>UX/UI</h2>
             <h3>A Passion For Interaction!</h3>
         </div>
         <div class="col-6 col-sm-3 workitem icon desicon" id="animate3">
             <div class="workitemwrapper">
-              <img src="img/designiconcolor.svg" class="img-fluid" id="des">
+              <img src="img/designiconcolor.svg" class="img-fluid" id="color_back">
             </div>
             <h2>Graphics</h2>
             <h3>Colors and fonts and all that!</h3>
         </div>
         <div class="col-6 col-sm-3 workitem icon gamesicon" id="animate4">
             <div class="workitemwrapper">
-              <img src="img/gamesiconcolor.svg" class="img-fluid project" id="games">
+              <img src="img/gamesiconcolor.svg" class="img-fluid project" id="color_back">
             </div>
             <h2>Games</h2>
             <h3 id="projects">Fun to play, hard to make</h3>
@@ -183,13 +183,13 @@
               <h3>Technology Used: Bootstrap, HTML5, CSS, Adobe CC</h3>
             </div>
             <div class="col-md-6">
-              <a href="graphicdesign.html">"<img src="img/Graphic_Design_Gallery.jpg" class="img-fluid projectimg"></a>
+              <a href="graphicdesign.html"><img src="img/Graphic_Design_Gallery.jpg" class="img-fluid projectimg"></a>
               <h2>Graphic Design Gallery</h2>
               <h3>Technology Used: Photoshop, Illustrator, InDesign</h3>
             </div>
             <div class="col-md-6">
-              <a target="_blank" href="https://whatdowesell.herokuapp.com">"<img src="img/what_do_we_sell.jpg" class="img-fluid projectimg"></a>
-              <h2>E-Commerce Web Application</h2>
+              <a target="_blank" href="https://whatdowesell.herokuapp.com"><img src="img/what_do_we_sell.jpg" class="img-fluid projectimg"></a>
+              <h2>E-Commerce Web Application (work-in-progress)</h2>
               <h3>Technology Used: Ruby on Rails, HTML5, SCSS, Heroku</h3>
             </div>
           </div>
@@ -290,31 +290,83 @@
         </div>
       </div>
       <div class="section_wrapper" id="contactsection">
-        <div class="section_wrapper_wrapper">
-          <form action="/action_page.php" id="contactform">
-            <p>First name:</p>
-            <input type="text" name="firstname" value="First Name">
-            <p>Last Name:</p>
-            <input type="text" name="lastname" value="Last Name">
-            <input type="submit" value="Submit">
-            <p>E-Mail:</p>
-            <input type="text" name="lastname" value="E-Mail">
-            <input type="submit" value="Submit">
-          </form>
-          <form action="/action_page.php" id="contactform">
-            <p>First name:</p>
-            <input type="text" name="firstname" value="First Name">
-            <p>Last Name:</p>
-            <input type="text" name="lastname" value="Last Name">
-            <input type="submit" value="Submit">
-            <p>E-Mail:</p>
-            <input type="text" name="lastname" value="E-Mail">
-            <input type="submit" value="Submit">
-          </form>
+        <h2>Love Filling Out Long Forms?!</h2>
+        <p>Me too! You are in luck (ALL FIELDS REQUIRED!)</p>
+      <form class="formsection">
+        <div id="messagethanks">
+          <p> We have received your message, shortly you will receive an email stating the same thing. We may or may not look at your message, it kind of depends on how busy we are. Your message is important to us, sort of.</p>
+        </div>
+          <div class="msgarea">
+            <div class="row">
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="name">FIRST NAME</label>
+                <input type="text" class="form-control"  id="firstname" name="firstname">
+              </div>
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="email">MIDDLE NAME</label>
+                <input type="email" class="form-control" id="middlename" name="middlename">
+              </div>
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="phone">LAST NAME</label>
+                <input type="text" class="form-control" id="lastname" name="lastname">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-3 col-md-4">
+                <label for="name">ADDRESS</label>
+                <input type="text" class="form-control" name="address">
+              </div>
+              <div class="form-group col-lg-3 col-md-4">
+                <label for="email">CITY</label>
+                <input type="email" class="form-control" id="email" name="city">
+              </div>
+              <div class="form-group col-lg-3 col-md-4">
+                <label for="phone">STATE</label>
+                <input type="text" class="form-control" id="phone" name="state">
+              </div>
+              <div class="form-group col-lg-3 col-md-4">
+                <label for="phone">ZIP</label>
+                <input type="text" class="form-control" id="phone" name="zip">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="name">WORK PHONE #</label>
+                  <input type="text" class="form-control"  id="workphone" name="workphone">
+              </div>
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="email">CELL PHONE #</label>
+                <input type="email" class="form-control" id="cellphone" name="cellphone">
+              </div>
+              <div class="form-group col-lg-4 col-md-6">
+                <label for="phone">HOME PHONE #</label>
+                <input type="text" class="form-control" id="homephone" name="homephone">
+              </div>
+            </div>
+
+            <div class="form-group" id="message_pad">
+                <label id="submit-label" for="message">MESSAGE</label>
+                <textarea class="form-control" placeholder="What you wanna talk about?" style="resize:none" cols="40" rows="5" id="message"  name="usermessage" required></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary btn-submit">Submit</button>
+          </div>
+      </form>
+      <h2>Hate Filling Out Long Forms?!</h2>
+      <p>No worries, there are easier ways...</p>
+      <div class="row" id="center_row">
+        <div class="col-12 col-sm-6">
+          <a href="https://github.com/STRDesignandDev?utf8=✓&tab=repositories&q=&type=public&language="><img src="img/giticonnormal.svg" id="color_back" class="img-fluid"></a>
+          <h2>Github</h2>
+          <h3>LOOK AT CODE</h3>
+        </div>
+        <div class="col-12 col-sm-6">
+          <a href="mailto:str.designanddev@gmail.com?Subject=Hello%20Ryan" target="_top"><img src="img/contacticoncolor.svg" id="color_back" class="img-fluid"></a>
+          <h2>E-Mail Me</h2>
+          <input type="text" id="myEmail" value="STR.DESIGNANDDEV@GMAIL.COM"><button onclick="copyClipboard()">Copy</button> 
+
         </div>
       </div>
     </div>
-  </section>
 
 
 </div><!-- WRAPPER END -->

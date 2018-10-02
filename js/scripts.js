@@ -214,3 +214,12 @@ var $root = $('html, body');
             }
             return false;
           });
+
+// COPY TO CLIPBOARD
+
+function copyClipboard() {
+  var copyText = document.getElementById("myEmail");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied to clipboard");
+}

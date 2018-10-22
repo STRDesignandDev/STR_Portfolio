@@ -29,7 +29,7 @@ h1{
 h2{
   font-family: 'Passion One';
   font-size: 2em;
-  line-height: .7;
+  line-height: .8;
   margin-bottom: 0!important;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -125,6 +125,10 @@ label{
 .navbar-brand_back{
   margin-left: 6%;
   padding-left: 0!important;
+}
+
+.navbar-brand img{
+  width:40%;
 }
 
 .rightmenu{
@@ -447,6 +451,7 @@ label{
 
 /* FOOTER */
 
+
 .footer{
   background-color: black;
   color: white;
@@ -458,6 +463,11 @@ label{
   z-index: 20;
   overflow: hidden;
   width: 100%;
+}
+
+.footer p{
+  font-weight: 200;
+  font-size: .7em;
 }
 
 
@@ -473,7 +483,7 @@ label{
 @media (max-width: 599px){
   .section_wrapper{
     padding-right: 1%;
-    padding-left: 14%;
+    padding-left: 10%;
   }
 }
 
@@ -688,4 +698,8 @@ button{
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: .9em;
+}
+
+#contact_pad{
+  padding-top: 50px;
 }

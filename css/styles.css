@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* GLOBAL STYLES___ */
 .colorbarright, .colorbarleft, .rightwrapper, .leftwrapper{
   height: 101vh!important;
   min-height: 101%!important;
@@ -107,11 +107,11 @@ label{
   right: 3%;
 }
 
-/* @media (min-width: 600px){
+@media (min-width: 600px){
   .hamburger{
     display: none!important;
   }
-} */
+}
 
 .navbar-toggler{
   padding-right: 0!important;
@@ -131,18 +131,41 @@ label{
   width:40%;
 }
 
-.rightmenu{
+.rightmenu_mobile{
   height: 100%;
-  width: 23%;
+  width: 0%;
   background-color: black;
   position: fixed;
   padding-top: 50px;
   z-index: 15;
+  right: 0;
+}
+
+.rightmenu{
+  height: 100%;
+  width: 11%;
+  background-color: black;
+  position: fixed;
+  padding-top: 50px;
+  z-index: 15;
+  right: 0;
 }
 
 @media (min-width: 600px) {
+  .rightmenu_mobile{
+    display: none;
+  }
   .rightmenu{
-    width: 11%;
+    display: block;
+  }
+}
+
+@media (max-width: 599px) {
+  .rightmenu{
+    display: none;
+  }
+  .rightmenu_mobile{
+    display: block;
   }
 }
 

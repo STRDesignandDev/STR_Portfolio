@@ -18,7 +18,7 @@ $( "#projectslink, #projectslink2" ).on('click', function() {
     $('.section_wrapper').css('padding-top', '50px');
 });
 
-$( "#aboutlink" ).on('click', function() {
+$( "#aboutlink, #aboutlink2" ).on('click', function() {
     $('#projectssection').fadeOut();
     $('#contactsection').fadeOut();
     $('#aboutsection').delay(800).fadeIn();
@@ -32,7 +32,7 @@ $( "#aboutlink" ).on('click', function() {
     $('.section_wrapper').css('padding-top', '50px');
 });
 
-$( "#contactlink" ).on('click', function() {
+$( "#contactlink, #contactlink2" ).on('click', function() {
     $('#contactsection').delay(800).fadeIn();
     $('#projectssection').fadeOut();
     $('#aboutsection').fadeOut();
@@ -62,47 +62,46 @@ $( "#homelink" ).on('click', function() {
 
 // Set up listeners for screen size
 
-var x = window.matchMedia("(max-width: 599px)")
-screenSm(x) // Call listener function at run time
-x.addListener(screenSm) // Attach listener function on state changes
-
-var y = window.matchMedia("(min-width: 600px)")
-screenLg(y) // Call listener function at run time
-y.addListener(screenLg) // Attach listener function on state changes
-
-// Nav changes for large screens
-
-function screenLg(y) {
-    if (y.matches) {
-      $('.rightmenu').css("right", '0').show();
-      $('.hamburger').hide();
-    }
-}
+// var x = window.matchMedia("(max-width: 599px)")
+// screenSm(x) // Call listener function at run time
+// x.addListener(screenSm) // Attach listener function on state changes
+//
+// var y = window.matchMedia("(min-width: 600px)")
+// screenLg(y) // Call listener function at run time
+// y.addListener(screenLg) // Attach listener function on state changes
+//
+// // Nav changes for large screens
+//
+// function screenLg(y) {
+//     if (y.matches) {
+//       $('.rightmenu').css("right", '0').show();
+//       $('.hamburger').hide();
+//     }
+// }
 
 // Nav changes for small screens
 
-function screenSm(x) {
-    if (x.matches) {
-      $('.hamburger').show();
-      $('.rightmenu').css("right", '-30%');  // resets the position of the menu on state change of screen width
-  }
-}
+// function screenSm(x) {
+//     if (x.matches) {
+//       $('.hamburger').show();
+//       $('.rightmenu').css("right", '-30%');  // resets the position of the menu on state change of screen width
+//   }
+// }
 
 // Animate menu in from right side when on small screens
 
 $(document).on('click', '.menurightitem', function() {
-      $('.rightmenu').show();
-      if (x.matches){
-        $('.rightmenu').animate({"right": '-=30%'});
-        return false;
-      }
+      // $('.rightmenu').show();
+      // if (x.matches){
+        $('.rightmenu_mobile').animate({"width": '0%'});
+        // return false;
 });
 
 // animate menu out of view screen for small screens
 
 $(document).on( "click touchend", ".hamburger", function() {
-  $('.rightwrapper').animate({"left": '+=10%'}, "med" );
-  $('.rightmenu').delay(400).animate({"right": '+=30%'}, "fast");
+  // $('.rightwrapper').animate({"left": '+=10%'}, "med" );
+  $('.rightmenu_mobile').delay(400).animate({"width": '30%'}, "fast");
 });
 
 

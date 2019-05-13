@@ -29,7 +29,6 @@ h1{
 h2{
   font-family: 'Passion One';
   font-size: 2em;
-  line-height: .8;
   margin-bottom: 0!important;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -52,10 +51,19 @@ label{
   font-size: .9em;
 }
 
+.separator{
+  border-top: 1px solid black;
+  min-height:10px;
+}
+
 .innercontent{
   margin-right: 18%;
   margin-left: 10%;
   padding-top: 50px;
+}
+
+.col-md-6-pad{
+  padding:50px;
 }
 
 .col-md-6{
@@ -63,8 +71,7 @@ label{
   padding-right: 50px!important;
   padding-bottom: 15px!important;
 }
-
-.col-md-4{
+.col-lg-6{
   padding-left: 0!important;
   padding-right: 50px!important;
   padding-bottom: 15px!important;
@@ -337,6 +344,13 @@ label{
   padding-top: 30px;
 }
 
+@media only screen and (min-width: 600px) {
+  .introtext{
+    height: 25%;
+    padding-top: 30px;
+  }
+}
+
 .introcontent2{
   height: 25%;
   padding-top: 30px;
@@ -368,16 +382,9 @@ label{
   margin-bottom: 30%;
   margin-right: auto;
   margin-top: 70px;
-  text-align: center;
   z-index: 1;
 }
 
-.workcategories h2{
-  font-size: 1.2em;
-  padding-top: 10px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
-}
 
 .workheader{
   display: inline-block;
@@ -388,6 +395,7 @@ label{
   margin-top:10px;
   /* max-width: 150px; */
 }
+
 
 @media (min-width: 600px){
   .introcontent h3{
@@ -423,8 +431,8 @@ label{
 
 .workitemwrapper img{
   width: 100%;
-  margin-left: 13%;
-  margin-right: auto
+  max-width: 250px;
+  margin-right: auto;
 }
 
 .workitem{
@@ -433,7 +441,6 @@ label{
 
 .projectimg{
   width: 40%;
-  border: .5px solid black;
   margin-bottom: 15px;
   margin-right: 10px;
 }
@@ -603,6 +610,10 @@ label{
   font-family: 'Raleway', sans-serif;
 }
 
+.project_descrition h1{
+  font-size: 1.8em;
+}
+
 .carousel{
   padding-top: 25px;
   padding-bottom: 25px;
@@ -725,4 +736,8 @@ button{
 
 #contact_pad{
   padding-top: 50px;
+}
+
+.margin50bottom{
+  margin-bottom:50px;
 }

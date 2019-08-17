@@ -6,6 +6,8 @@ var page_isolated = false;
 
 $( "#projectslink, #projectslink2" ).on('click', function() {
     $('#projectssection').delay(800).fadeIn();
+    $('.bottom-section').hide();
+    $('.bottom-section').delay(800).fadeIn();
     $('#aboutsection').fadeOut();
     $('#contactsection').fadeOut();
     $('.workcategories').hide(500);
@@ -20,6 +22,8 @@ $( "#projectslink, #projectslink2" ).on('click', function() {
 
 $( "#aboutlink, #aboutlink2" ).on('click', function() {
     $('#projectssection').fadeOut();
+    $('.bottom-section').hide();
+    $('.bottom-section').delay(800).fadeIn();
     $('#contactsection').fadeOut();
     $('#aboutsection').delay(800).fadeIn();
     $('.workcategories').hide(500);
@@ -34,6 +38,8 @@ $( "#aboutlink, #aboutlink2" ).on('click', function() {
 
 $( "#contactlink, #contactlink2" ).on('click', function() {
     $('#contactsection').delay(800).fadeIn();
+    $('.bottom-section').hide();
+    $('.bottom-section').delay(800).fadeIn();
     $('#projectssection').fadeOut();
     $('#aboutsection').fadeOut();
     $('.workcategories').hide(500);
@@ -115,24 +121,28 @@ var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", offset: 40})
         // trigger a velocity opacity animation
-        .setVelocity("#animate1", {opacity: 0}, {duration: 200})
+        .setVelocity("#animate1", {opacity: 0}, {duration: 600})
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", offset: 90})
         // trigger a velocity opaticy animation
-        .setVelocity("#animate2", {opacity: 0}, {duration: 200})
+        .setVelocity("#animate2", {opacity: 0}, {duration: 600})
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger3", offset: 140})
         // trigger a velocity opaticy animation
-        .setVelocity("#animate3", {opacity: 0}, {duration: 200})
+        .setVelocity("#animate3", {opacity: 0}, {duration: 600})
         // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger4", offset: 190})
-        // trigger a velocity opacity animation
-        .setVelocity("#animate4", {opacity: 0}, {duration: 200})
-        // .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
+
+
+
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger4",offset: 800})
+				.setClassToggle("#animate4", "kill")
+				// .addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+
+
 
 
 // Sticky headers
@@ -220,5 +230,5 @@ function copyClipboard() {
   var copyText = document.getElementById("myEmail");
   copyText.select();
   document.execCommand("copy");
-  alert("Copied to clipboard");
+  alert("Copied to clipboard. Now email me.");
 }

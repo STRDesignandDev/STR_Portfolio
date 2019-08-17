@@ -11,8 +11,18 @@
 .wrapper{
   overflow-x: hidden;
   height: 100%;
-  display: table;
   width: 100%;
+}
+
+body{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#896e81+0,69757a+50,666767+100 */
+  background: rgb(137,110,129); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(137,110,129,1) 0%, rgba(105,117,122,1) 50%, rgba(102,103,103,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(137,110,129,1) 0%,rgba(105,117,122,1) 50%,rgba(102,103,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(137,110,129,1) 0%,rgba(105,117,122,1) 50%,rgba(102,103,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#896e81', endColorstr='#666767',GradientType=1 ); /* IE6-9 */
+
+
 }
 
 p{
@@ -23,20 +33,22 @@ p{
 
 h1{
   font-family: 'Passion One';
-  font-size: 2.8em;
+  font-size: 2.5em;
+    color:black;
   /* line-height: .7; */
 }
 h2{
   font-family: 'Passion One';
   font-size: 2em;
   margin-bottom: 0!important;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  color:black;
+    line-height: 1em;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  font-size: .9em;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 1em;
 }
 
 h4 {
@@ -58,33 +70,20 @@ label{
 
 .innercontent{
   margin-right: 18%;
-  margin-left: 10%;
+  margin-left: 5%;
   padding-top: 50px;
 }
 
-.col-md-6-pad{
-  padding:50px;
+@media (max-width: 600px){
+  .innercontent{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
-.col-md-6{
-  padding-left: 0!important;
-  padding-right: 50px!important;
-  padding-bottom: 15px!important;
-}
-.col-lg-6{
-  padding-left: 0!important;
-  padding-right: 50px!important;
-  padding-bottom: 15px!important;
-}
-
-.col-lg-3{
-  padding-left: 0!important;
-  padding-right: 50px!important;
-  padding-bottom: 15px!important;
-}
 
 .row{
-  margin-left: 0!important;
+  margin: 0!important;
 }
 
 
@@ -97,7 +96,7 @@ label{
 .navbar{
   background-color: black!important;
   max-height: 50px!important;
-  z-index: 8;
+  z-index: 12;
   padding-left: 0!important;
 }
 
@@ -125,17 +124,25 @@ label{
 }
 
 .navbar-brand{
-  margin-left: 10%;
+  margin-left:6%;
   padding-left: 0!important;
 }
 
 .navbar-brand_back{
-  margin-left: 6%;
+  margin-left: 5%;
   padding-left: 0!important;
 }
 
+.exit{
+  width:40px;
+  position:absolute;
+  top:70px;
+  right:20px
+}
+
 .navbar-brand img{
-  width:40%;
+  width:30%;
+  height:auto;
 }
 
 .rightmenu_mobile{
@@ -206,6 +213,24 @@ label{
   width: 100%;
   margin-left: 60%;
 } */
+
+.newcolorbar{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#896e81+0,69757a+50,666767+100&1+0,0+100 */
+  background: -moz-linear-gradient(left,  rgba(137,110,129,1) 0%, rgba(105,117,122,0.5) 50%, rgba(102,103,103,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(137,110,129,1) 0%,rgba(105,117,122,0.5) 50%,rgba(102,103,103,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(137,110,129,1) 0%,rgba(105,117,122,0.5) 50%,rgba(102,103,103,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#896e81', endColorstr='#00666767',GradientType=1 ); /* IE6-9 */
+  background-position: left;
+  background-size:60%!important;
+  float: left;
+  background-repeat: repeat-y;
+  overflow: visible;
+  width: 50%;
+  height:100%;
+  z-index: 30;
+  position:absolute;
+}
+
 
 .colorbarleft{
   position: absolute;
@@ -341,19 +366,31 @@ label{
 
 .introcontent{
   height: 25%;
-  padding-top: 30px;
+  padding: 60px 0px 0px 10px!important;
+  z-index: 1;
+  position: absolute;
+  width:76%;
 }
 
-@media only screen and (min-width: 600px) {
-  .introtext{
-    height: 25%;
-    padding-top: 30px;
-  }
+.introcontent h1{
+  font-size: 3em;
 }
+
+
+  .boxstyle{
+    padding-top: 30px;
+    background: white;
+    border: 12px double black;
+    padding: 7px;
+  }
+
 
 .introcontent2{
   height: 25%;
-  padding-top: 30px;
+  padding: 60px 0px 0px 10px!important;
+  z-index: 1;
+  position: absolute;
+  width:76%;
   display: none;
 }
 
@@ -379,9 +416,9 @@ label{
 /* WORK CATEGORIES */
 
 .workcategories{
-  margin-bottom: 30%;
+  margin-bottom: 100px;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 280px;
   z-index: 1;
 }
 
@@ -390,53 +427,39 @@ label{
   display: inline-block;
 }
 
-.workitemwrapper{
-  width: 80%;
-  margin-top:10px;
-  /* max-width: 150px; */
-}
+
 
 
 @media (min-width: 600px){
   .introcontent h3{
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .introcontent h4{
-    font-size: .9em;
-  }
-  .introcontent2 h3{
     font-size: 1em;
   }
+  .introcontent2 h3{
+    font-size: 1.3em;
+  }
   .introcontent2 h4{
-    font-size: .9em;
+    font-size: 1em;
   }
 }
 
-@media (max-width: 599px){
-  .workcategories{
-    margin-left: 7%;
-    margin-top: 20px;
-    margin-bottom: 200px;
-  }
-  .leftwrapper{
-    width: 9%;
-  }
-}
 
 .workitemwrappermenu{
   width: 90%;
   max-width: 150px;
   margin-top:10px;
+  cursor:pointer;
 }
 
 .workitemwrapper img{
   width: 100%;
-  max-width: 250px;
   margin-right: auto;
 }
 
 .workitem{
-  padding-left: 0px!important;
+  padding:10px;
 }
 
 .projectimg{
@@ -481,6 +504,11 @@ label{
 
 /* FOOTER */
 
+.portfolio{
+  background: white;
+  z-index: 10;
+  position: relative;
+}
 
 .footer{
   background-color: black;
@@ -504,32 +532,42 @@ label{
 .section_wrapper{
   z-index: 5;
   width: 100%;
-  padding-left: 10%;
   padding-right: 18%;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   padding-top: 76px;
 }
 
-@media (max-width: 599px){
-  .section_wrapper{
-    padding-right: 1%;
-    padding-left: 10%;
-  }
+.bottom-section{
+  margin-left: 5%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-right: 10%;
+}
+
+}
+.form-group .col-lg-4 .col-md-6{
+  padding-left: 0px;
 }
 
 .heading_wrapper{
   width: 100%;
   background: black;
-  padding-left: 10%;
   padding-top: 5px;
   color: white;
   padding-right: 25%;
   height: 50px;
+  padding-left: 6%;
 }
 
 .heading_wrapper h2{
   font-size: 1.8em;
   line-height: .7em;
+  color: white;
+  padding-top:15px;
+}
+
+.portfolio h2{
+  padding-bottom:10px;
 }
 
 
@@ -547,7 +585,7 @@ label{
   position: fixed;
   width: 100%;
   top: 50px;
-  z-index: 1;
+  z-index:2;
 }
 
 /* .rollout {
@@ -603,16 +641,7 @@ label{
   margin-right: 10px;
 }
 
-.project_descrition h2{
-  font-size: 1.2em;
-  padding-top: 10px;
-  font-weight: 600;
-  font-family: 'Raleway', sans-serif;
-}
 
-.project_descrition h1{
-  font-size: 1.8em;
-}
 
 .carousel{
   padding-top: 25px;
@@ -664,8 +693,9 @@ label{
 }
 
 #tma_screen img{
-  width: 75%;
-  margin-left: 25%;
+  width: 50%;
+  float: right;
+  margin: 30px 0px;
 }
 
 
@@ -717,21 +747,25 @@ label{
 input {
     border: none;
     width: 250px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: .9em;
+    font-family: 'Raleway', sans-serif;;
     padding-top: none;
     display: inline-block;
+    background:rgba(0, 0, 0, 0);
+    font-weight: 300;
+    font-size: 1.3em;
 }
 
 button{
   background-color: black!important;
   border: none;
   color: white;
-  display: inline-block;
+  display: inline;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: .9em;
+  width:100px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #contact_pad{
@@ -740,4 +774,8 @@ button{
 
 .margin50bottom{
   margin-bottom:50px;
+}
+
+.kill{
+  display:none;
 }

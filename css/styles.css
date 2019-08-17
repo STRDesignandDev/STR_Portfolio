@@ -418,7 +418,7 @@ label{
 .workcategories{
   margin-bottom: 100px;
   margin-right: auto;
-  margin-top: 280px;
+  margin-top: 300px;
   z-index: 1;
 }
 
@@ -451,6 +451,16 @@ label{
   max-width: 150px;
   margin-top:10px;
   cursor:pointer;
+}
+
+@media (max-width: 600px){
+  .workitem{
+    width:33%;
+    margin-right: auto;
+  }
+  .workitem h2{
+    font-size: 1.2em;;
+  }
 }
 
 .workitemwrapper img{
@@ -778,4 +788,10 @@ button{
 
 .kill{
   display:none;
+}
+
+@media (max-width: 600px){
+  .hide-mobile{
+    display:none;
+  }
 }

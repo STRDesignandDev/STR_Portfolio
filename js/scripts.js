@@ -142,6 +142,11 @@ var scene = new ScrollMagic.Scene({triggerElement: "#trigger4",offset: 800})
 				// .addIndicators() // add indicators (requires plugin)
 				.addTo(controller);
 
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger6",offset: 800})
+				.setClassToggle("#animate6", "fix")
+				// .addIndicators() // add indicators (requires plugin)
+				.addTo(controller);
+
 
 
 

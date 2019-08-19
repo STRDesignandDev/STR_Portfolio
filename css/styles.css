@@ -38,16 +38,18 @@ h1{
   /* line-height: .7; */
 }
 h2{
-  font-family: 'Passion One';
-  font-size: 2em;
+  font-family: 'Raleway';
+  font-size: 1.2em;
   margin-bottom: 0!important;
   color:black;
     line-height: 1em;
+    font-weight: 800;
+    padding-top:15px;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 1.3em;
+  font-weight: 200;
+  font-size: 1.2em;
   line-height: 1em;
 }
 
@@ -86,6 +88,15 @@ label{
   margin: 0!important;
 }
 
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+
+    padding-left: 0px;
+}
+
+#bio{
+  padding-left: 15px!important;
+}
 
 /* NAVIGATION */
 
@@ -377,12 +388,24 @@ label{
 }
 
 
-  .boxstyle{
-    padding-top: 30px;
-    background: white;
-    border: 12px double black;
-    padding: 7px;
-  }
+.boxstyle{
+  padding-top: 30px;
+  background: white;
+  border: 12px double black;
+  padding: 7px;
+}
+
+.boxstyle h2{
+  padding-top:0px;
+
+}
+
+.boxstyle2{
+
+  background: white;
+  border: 6px double black;
+  padding: 0px 0px 0px 7px;
+}
 
 
 .introcontent2{
@@ -489,6 +512,10 @@ label{
   padding-left: 15px
 }
 
+.relative{
+  position: relative;
+}
+
 
 /* work category images */
 /*
@@ -555,15 +582,13 @@ label{
   z-index: 5;
   width: 100%;
   padding-right: 18%;
-  padding-bottom: 100px;
-  padding-top: 76px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .bottom-section{
-  margin-left: 5%;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  margin-right: 10%;
+
+  border-top: 40px solid black;
 }
 
 }
@@ -582,7 +607,7 @@ label{
 }
 
 .heading_wrapper h2{
-  font-size: 1.8em;
+  font-size: 1.4em;
   line-height: .7em;
   color: white;
   padding-top:15px;
@@ -678,7 +703,7 @@ label{
 }
 
 .carousel-inner img{
-  max-height: 600px;
+
   width: auto;
 }
 
@@ -763,7 +788,8 @@ label{
 #center_row{
   margin-left: 20%!important;
   width: 50%;
-  padding-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 input {
@@ -794,12 +820,14 @@ button{
   padding-top: 50px;
 }
 
-.margin50bottom{
-  margin-bottom:50px;
+.margin30bottom{
+  margin-bottom:30px;
 }
 
 .kill{
-  display:none;
+  position: absolute;
+visibility:hidden;
+display:none;
 }
 
 @media (max-width: 600px){

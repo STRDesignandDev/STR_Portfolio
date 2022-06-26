@@ -71,17 +71,22 @@ label{
 }
 
 .innercontent{
-  margin-right: 18%;
   padding-left: 5%;
-  padding-top: 50px;
+  padding-right: 5%;
+  background-image: url("../img/cloudback.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
   .innercontent{
     margin-right: 5%;
     margin-left: 5%;
   }
-}
+} */
 
 
 .row{
@@ -108,9 +113,11 @@ label{
 
 .navbar{
   background-color: black!important;
-  max-height: 50px!important;
+  max-height: 75px!important;
   z-index: 12;
   padding-left: 0!important;
+  position: relative;
+  flex-wrap: initial;
 }
 
 
@@ -126,18 +133,18 @@ label{
   right: 3%;
 }
 
-@media (min-width: 600px){
+/* @media (min-width: 600px){
   .hamburger{
     display: none!important;
   }
-}
+} */
 
 .navbar-toggler{
   padding-right: 0!important;
 }
 
 .navbar-brand{
-  margin-left:6%;
+  margin-left:3%;
   padding-left: 0!important;
 }
 
@@ -154,8 +161,9 @@ label{
 }
 
 .navbar-brand img{
-  width:30%;
-  height:auto;
+  width: 300px;
+  height: auto;
+  padding-top: 25px;
 }
 
 .rightmenu_mobile{
@@ -166,6 +174,7 @@ label{
   padding-top: 50px;
   z-index: 15;
   right: 0;
+  top: 0;
 }
 
 .rightmenu{
@@ -178,7 +187,7 @@ label{
   right: 0;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .rightmenu_mobile{
     display: none;
   }
@@ -193,7 +202,7 @@ label{
   }
   .rightmenu_mobile{
     display: block;
-  }
+  } */
 }
 
 
@@ -201,6 +210,7 @@ label{
   width: 60%;
   margin-left: 25%;
   margin-right: auto;
+  text-align: center;
 }
 
 .menurightitem h2{
@@ -379,10 +389,12 @@ label{
 
 .introcontent{
   height: 25%;
-  padding: 60px 0px 0px 10px!important;
+  /* padding: 60px 0px 0px 10px!important; */
   z-index: 1;
   position: absolute;
-  width:76%;
+  margin-top: 50px;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .introcontent h1{
@@ -441,9 +453,9 @@ label{
 /* WORK CATEGORIES */
 
 .workcategories{
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: 215px;
   z-index: 1;
 }
 
@@ -472,19 +484,37 @@ label{
 
 
 .workitemwrappermenu{
-  width: 90%;
-  max-width: 150px;
   margin-top:10px;
   cursor:pointer;
+  text-align: center;
 }
 
 @media (max-width: 600px){
   .workitem{
     width:33%;
     margin-right: auto;
+    padding: 5px!important;
   }
   .workitem h2{
     font-size: 1.2em;;
+  }
+  .workcategories{
+    margin-top: 250px!important;
+  }
+  p{
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 565px){
+  .bar_border{
+    width: 250px!important;
+  }
+}
+
+@media (min-width: 1020px){
+  .bar_border{
+    width: 500px!important;
   }
 }
 
@@ -512,14 +542,10 @@ label{
     color: white;
     margin-top: 10px;
     margin-right: -15px;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 20px!important;
 }
 
-@media (max-width: 600px){
-  .projectimg{
-    padding:0px;
-  }
-}
 
 .pad-left-15{
   padding-left: 15px
@@ -594,7 +620,8 @@ label{
 .section_wrapper{
   z-index: 5;
   width: 100%;
-  padding-right: 18%;
+  padding-right: 5%;
+  padding-left: 5%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -614,6 +641,7 @@ label{
   background: black;
   color: white;
   padding-left: 6%;
+  padding: 10px 0px 10px 6%;
 }
 
 .heading_wrapper h2{
@@ -641,7 +669,7 @@ label{
 .sticky {
   position: fixed;
   width: 100%;
-  top: 50px;
+  top: 0px;
   z-index:2;
 }
 
@@ -657,7 +685,7 @@ label{
 }
 
 .padme{
-  padding-top: 100px!important;
+  padding-top: 125px!important;
 }
 
 .padme_page_issolated{
@@ -674,7 +702,7 @@ label{
   border: 1px solid black;
   /* margin-top: 2px; */
   /* margin-bottom: 2px; */
-  width: 350px;
+  width: 400px;
   margin-left: 20px;
   /* height: 5px; */
 }

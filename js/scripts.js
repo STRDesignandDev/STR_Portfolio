@@ -107,7 +107,7 @@ $(document).on('click', '.menurightitem', function() {
 
 $(document).on( "click touchend", ".hamburger", function() {
   // $('.rightwrapper').animate({"left": '+=10%'}, "med" );
-  $('.rightmenu_mobile').delay(400).animate({"width": '30%'}, "fast");
+  $('.rightmenu_mobile').delay(400).animate({"width": '15%'}, "fast");
 });
 
 
@@ -168,7 +168,7 @@ window.addEventListener('scroll', function() {
      var header3 = document.getElementById('heading_sticker3');
      var distanceToTopContact = header3.getBoundingClientRect().top;
 
-       if (distanceToTopProject < 50){
+       if (distanceToTopProject < 0){
          $('#project_stick').addClass('sticky');
          $('#projectssection').addClass('padme');
        }
@@ -176,7 +176,7 @@ window.addEventListener('scroll', function() {
          $('#project_stick').removeClass('sticky');
          $('#projectssection').removeClass('padme');
        }
-       if (distanceToTopAbout < 50){
+       if (distanceToTopAbout < 0){
          $('#about_stick').addClass('sticky');
          $('#aboutsection').addClass('padme');
        }
@@ -184,7 +184,7 @@ window.addEventListener('scroll', function() {
          $('#about_stick').removeClass('sticky');
          $('#aboutsection').removeClass('padme');
        }
-       if (distanceToTopContact < 50){
+       if (distanceToTopContact < 0){
          $('#contact_stick').addClass('sticky');
          $('#contactsection').addClass('padme');
        }

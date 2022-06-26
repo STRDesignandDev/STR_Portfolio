@@ -204,12 +204,12 @@ window.addEventListener('scroll', function() {
   var distanceToTopSkillsTable = skills_table.getBoundingClientRect().top;
 
   if (distanceToTopSkillsTable < 400){
-      $("#html5").animate({width: '85%'});
+      $("#html5").animate({width: '90%'});
       $("#css").delay(100).animate({width: '85%'});
       $("#ruby").delay(200).animate({width: '65%'});
-      $("#jQuery").delay(300).animate({width: '70%'});
-      $("#javascript").delay(400).animate({width: '65%'});
-      $("#adobe").delay(500).animate({width: '85%'});
+      $("#jQuery").delay(300).animate({width: '90%'});
+      $("#javascript").delay(400).animate({width: '50%'});
+      $("#adobe").delay(500).animate({width: '60%'});
     }
 });
 

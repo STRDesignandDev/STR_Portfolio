@@ -29,6 +29,7 @@ p{
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 h1{
@@ -38,19 +39,18 @@ h1{
   /* line-height: .7; */
 }
 h2{
-  font-family: 'Raleway';
-  font-size: 1.2em;
+  font-family: 'Passion One';
+  font-size: 1.9em;
   margin-bottom: 0!important;
   color:black;
     line-height: 1em;
-    font-weight: 800;
+    font-weight: 500;
     padding-top:15px;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 1.2em;
-  line-height: 1em;
 }
 
 h4 {
@@ -72,7 +72,7 @@ label{
 
 .innercontent{
   margin-right: 18%;
-  margin-left: 5%;
+  padding-left: 5%;
   padding-top: 50px;
 }
 
@@ -101,7 +101,9 @@ label{
 /* NAVIGATION */
 
 
-
+#aboutsection{
+  background: white;
+}
 
 
 .navbar{
@@ -496,10 +498,21 @@ label{
 }
 
 .projectimg{
-  width: 40%;
-  margin-bottom: 15px;
-  margin-right: 10px;
-  padding:30px;
+  padding: 20px;
+}
+
+.projectbutton {
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: center;
+    float: right;
+    color: white;
+    margin-top: 10px;
+    margin-right: -15px;
+    font-size: 1.5em;
 }
 
 @media (max-width: 600px){
@@ -554,7 +567,7 @@ label{
 /* FOOTER */
 
 .portfolio{
-  background: white;
+  /* background: white; */
   z-index: 10;
   position: relative;
 }
@@ -582,8 +595,8 @@ label{
   z-index: 5;
   width: 100%;
   padding-right: 18%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .bottom-section{
@@ -599,15 +612,12 @@ label{
 .heading_wrapper{
   width: 100%;
   background: black;
-  padding-top: 5px;
   color: white;
-  padding-right: 25%;
-  height: 50px;
   padding-left: 6%;
 }
 
 .heading_wrapper h2{
-  font-size: 1.4em;
+  font-size: 2em;
   line-height: .7em;
   color: white;
   padding-top:15px;
@@ -664,7 +674,7 @@ label{
   border: 1px solid black;
   /* margin-top: 2px; */
   /* margin-bottom: 2px; */
-  width: 150px;
+  width: 350px;
   margin-left: 20px;
   /* height: 5px; */
 }
@@ -677,7 +687,11 @@ label{
 
 
 .inner_skills{
-  background: black;
+  background: rgb(137,110,129); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(137,110,129,1) 0%, rgba(105,117,122,1) 50%, rgba(102,103,103,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(137,110,129,1) 0%,rgba(105,117,122,1) 50%,rgba(102,103,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(137,110,129,1) 0%,rgba(105,117,122,1) 50%,rgba(102,103,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#896e81', endColorstr='#666767',GradientType=1 ); /* IE6-9 */
   width: 0%;
   color: rgba(0, 0, 0, 0);
 }
@@ -786,8 +800,6 @@ label{
 }
 
 #center_row{
-  margin-left: 20%!important;
-  width: 50%;
   padding-top: 50px;
   padding-bottom: 80px;
 }
@@ -820,8 +832,13 @@ button{
   padding-top: 50px;
 }
 
+#contactsection{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .margin30bottom{
-  margin-bottom:30px;
+  margin-bottom:30px!important;
 }
 
 .kill{
@@ -834,4 +851,9 @@ display:none;
   .hide-mobile{
     display:none;
   }
+}
+
+.h1white{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }

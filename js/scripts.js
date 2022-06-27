@@ -203,9 +203,9 @@ window.addEventListener('scroll', function() {
   var skills_table = document.getElementById('skills_table');
   var distanceToTopSkillsTable = skills_table.getBoundingClientRect().top;
 
-  if (distanceToTopSkillsTable < 400){
+  if (distanceToTopSkillsTable < 600){
       $("#html5").animate({width: '90%'});
-      $("#css").delay(100).animate({width: '85%'});
+      $("#css").delay(100).animate({width: '86%'});
       $("#ruby").delay(200).animate({width: '65%'});
       $("#jQuery").delay(300).animate({width: '90%'});
       $("#javascript").delay(400).animate({width: '50%'});

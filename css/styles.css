@@ -73,7 +73,7 @@ label{
 .innercontent{
   padding-left: 5%;
   padding-right: 5%;
-  background-image: url("../img/cloudback.jpg");
+  /* background-image: url("../img/cloudback.jpg"); */
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -533,7 +533,12 @@ label{
 
 .projectbutton {
     padding: 10px;
-    background: black;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#874774+0,3f6777+50,296666+100 */
+    background: #874774; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #874774 0%, #3f6777 50%, #296666 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #874774 0%,#3f6777 50%,#296666 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #874774 0%,#3f6777 50%,#296666 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#874774', endColorstr='#296666',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -685,7 +690,7 @@ label{
 }
 
 .padme{
-  padding-top: 125px!important;
+  padding-top: 100px!important;
 }
 
 .padme_page_issolated{

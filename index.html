@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>STR Design & Dev</title>
-
+    <link rel="icon" type="image/x-icon" href="img/str.ico">
 
     <!-- bootstrap link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- font awesome link -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -48,7 +49,7 @@
           <img id="homelink" src="img/str_logo_flat_white.svg" href="#">
         </a>
 
-        <div class="hamburger"></div>
+        <!-- <div class="hamburger"></div> -->
   </nav>
 
 <!-- END NAVIGATION__________ -->
@@ -306,8 +307,9 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h2 class="projectbutton ">VIEW CASE STUDY</h2>
+              <h2 class="projectbutton btn btn-primary" type="button" data-toggle="modal" data-target="#windowsandwallsModal">VIEW CASE STUDY</h2>
             </div>
+
 
 
             <!-- What Do We Sell? -->
@@ -326,7 +328,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h2 class="projectbutton ">VISIT SITE</h2>
+                <a target="_blank" href="https://whatdowesell.herokuapp.com"><h2 class="projectbutton ">VISIT SITE</h2></a>
             </div>
 
 
@@ -342,11 +344,11 @@
                 </div>
               </div>
               <div class="col-md-6 col-md-6-pad ">
-                <a href="movieapp.html"><img src="img/themovieapp.jpg" class="img-fluid projectimg"></a>
+                <img src="img/themovieapp.jpg" class="img-fluid projectimg">
               </div>
             </div>
             <div class="col-md-12">
-              <h2 class="projectbutton ">VIEW CASE STUDY</h2>
+              <h2 class="projectbutton btn btn-primary" type="button" data-toggle="modal" data-target="#movieappModal">VIEW CASE STUDY</h2>
             </div>
 
     <!-- Timberland -->
@@ -508,6 +510,9 @@
     </div>
 
 
+
+
+
 </div><!-- WRAPPER END -->
 
 
@@ -534,6 +539,140 @@ STR Dev & Design</p>
     <script src="js/colorband.js"></script>
     <script src="js/scripts.js"></script>
     <script type="text/javascript" src="js/tracking.js"></script>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade"  id="windowsandwallsModal" tabindex="-1" role="dialog"  aria-labelledby="windowsandwallsModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
+      <input type="image" src="img/close.svg" class="closebutton" data-dismiss="modal"></input>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="carouselExampleIndicators" id="windowsandwallscarousel" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" >
+                  <img src="img/windowsandwalls/slide1.gif" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5>The Windows and Walls App Redesign</h5>
+                    <p>The app is a graphics ordering system with a client facing front end, and administrative job tracking system. It is used primarily by the beverage industry to place POS advertisements graphics in retail locations.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/windowsandwalls/LegacySystem.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5>The Old Windows And Walls App</h5>
+                    <p>The legacy version of the site was built exclusively for one client, and had a very rigid and out of date structure. A decision was made to create a new version of the app in a modern JS framework (VUE JS). This gave myself and the team an incredible opportunity to give an already highly utilized application a complete makeover.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="false">
+                  <img src="img/windowsandwalls/ideation.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5>Ideation and Architecture Restructure</h5>
+                    <p>I began reverse engineering the old application. Breaking down the user flows, restructuring the site architecture, and identifying redundancy. Utilizing user feedback and UX best practices, I began prototyping in low fidelity and annotating instructions for the dev team.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/windowsandwalls/admin.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5>UX Problem</h5>
+                    <p>The legacy system did not allow for onboarding of new clients. Each client needs to have unique pricing, messaging, and asset management.</p>
+                    <h5>UX Solution</h5>
+                    <p>Design an admin backend that allows for full control of multiple clients. Create the ability for internal users to manage clients, options, pricing, and more through the interface. This greatly reduced the need for costly development time.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/windowsandwalls/HiFiProtoypeUserSide2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5>UX Problem</h5>
+                    <p>The legacy system had a rigid user flow, users had to go through a strict set of sequential steps to submit an order, and could not revert back through decisions or mitigate errors</p>
+                    <h5>UX Solution</h5>
+                    <p>Create a user flow with more freedom and happy paths. Enable/disable interactive features to guide the user through the process. Provide better error recognition. Condense the UI to minimize the need for scrolling</p>
+                  </div>
+                </div>
+              </div>
+              <div class="controls-wrapper">
+                <ol class="carousel-indicators">
+                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="0" class="active"></li>
+                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="1"></li>
+                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="2"></li>
+                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="3"></li>
+                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel_controls_flex" data-interval="false">
+                  <a class="carousel-control-prev" href="#windowsandwallscarousel" role="button" data-slide="prev">
+                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
+                  </a>
+                  <a class="carousel-control-next" href="#windowsandwallscarousel" role="button" data-slide="next">
+                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade"  id="movieappModal" tabindex="-1" role="dialog"  aria-labelledby="movieappModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
+      <input type="image" src="img/close.svg" class="closebutton" data-dismiss="modal"></input>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div id="carouselExampleIndicators" id="movieappcarousel" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" >
+                  <img src="img/TMA/TMA1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item " >
+                  <img src="img/TMA/TMA7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item " >
+                  <img src="img/TMA/TMA8.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item " >
+                  <img src="img/TMA/TMA9.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA10.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA11.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA12.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA13.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA14.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA15.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" >
+                  <img src="img/TMA/TMA16.jpg" class="d-block w-100" alt="...">
+                </div>
+              <div class="controls-wrapper">
+                <div class="carousel_controls_flex" data-interval="false">
+                  <a class="carousel-control-prev" href="#movieappcarousel" role="button" data-slide="prev">
+                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
+                  </a>
+                  <a class="carousel-control-next" href="#movieappcarousel" role="button" data-slide="next">
+                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </body>
 

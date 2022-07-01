@@ -39,7 +39,7 @@
 
   </head>
 
-    <body  data-spy="scroll" data-target=".projectbutton">
+    <body  data-spy="scroll" >
 
       <!-- NAVIGATION_____________ -->
 
@@ -187,7 +187,7 @@
 
 <!-- START PORTFOLIO CONTENT -->
 
-  <section class="portfolio">
+  <div class="portfolio">
 
     <!-- ABOUT -->
 
@@ -307,7 +307,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h2 class="projectbutton btn btn-primary" type="button" data-toggle="modal" data-target="#windowsandwallsModal">VIEW CASE STUDY</h2>
+              <h2 class="projectbutton btn btn-primary" type="button" data-toggle="modal" id="windowsandwallsbutton" data-target="#windowsandwallsModal">VIEW CASE STUDY</h2>
             </div>
 
 
@@ -348,7 +348,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <h2 class="projectbutton btn btn-primary" type="button" data-toggle="modal" data-target="#movieappModal">VIEW CASE STUDY</h2>
+              <h2 class="projectbutton btn btn-primary" type="button" id="movieappbutton" data-toggle="modal" data-target="#movieappModal">VIEW CASE STUDY</h2>
             </div>
 
     <!-- Timberland -->
@@ -370,47 +370,26 @@
               <h2 class="projectbutton ">VISIT SITE</h2>
             </div>
 
+      <!-- Graphics -->
 
-
-            <!-- <div class="col-md-4 col-md-4-pad margin30bottom">
-              <h1 class="boxstyle2">Timberland Exteriors Colorado</h1>
-              <div class="pad-left-15">
-                <h2>Brand Design/Custom Wordpress Site</h2>
-                <h3>Technology Used: Wordpress, HTML5, CSS, Adobe CC</h3>
-                <br>
-                <p>This freelance project involved creating the brand identity for a local roofing company, as well as development of the site in wordpress.</p>
+            <h1 class="h1white">Graphic Design</h1>
+            <div class="row boxstyle2">
+              <div class="col-md-6 col-md-6-pad ">
+                <div class="pad-left-15">
+                  <h2>A Collection of Brand & Print Designs</h2>
+                  <h3 style="padding-bottom:10px; font-style: italic;">Technology Used: Photoshop, Illustrator, InDesign</h3>
+                  <p>My passion for design runs deep. I have years of experience designing brands, logos, and print collateral for clients.</p>
+                  <p>Browse some of my designs and layouts here.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-md-6-pad ">
+                <img  src="img/graphics/orangetheory.jpg" class="img-fluid projectimg"></a>
               </div>
             </div>
-            <div class="col-md-8 col-md-8-pad margin30bottom">
-              <a href="http://timberlandexteriorscolorado.com/"><img  src="img/TEC_wordpresssite.jpg" class="img-fluid projectimg"></a>
-            </div> -->
+            <div class="col-md-12">
+              <h2 class="projectbutton btn btn-primary" type="button" id="graphicsbutton" data-toggle="modal" data-target="#graphicsModal">VIEW GALLERY</h2>
+            </div>
 
-<!-- PAUSING THESE SECTIONS - Graphic Design and Frozen Apple -->
-
-            <!-- <div class="col-md-4 col-md-4-pad margin30bottom">
-              <h1 class="boxstyle2">The Frozen Apple</h1>
-              <div class="pad-left-15">
-                <h2>Custom Illustration Project</h2>
-                <h3>Technology Used: Pencil, Pen, Adobe Illustrator</h3>
-                <br>
-                <p>Created original illustration and graphic design layouts for a non-profit bike ride. A variety of print, social, and web assests created for the ride's marketing campaign.</p>
-              </div>
-            </div>
-            <div class="col-md-8 col-md-8-pad margin30bottom">
-              <a target="new" href="https://www.behance.net/gallery/91283355/The-Frozen-Apple"><img style="padding:25px" src="img/frozenapple.png" class="img-fluid projectimg"></a>
-            </div>
-            <div class="col-md-4 col-md-4-pad margin30bottom">
-              <h1 class="boxstyle2">Graphic Design</h1>
-              <div class="pad-left-15">
-                <h2>A Collection of Brand & Print Designs</h2>
-                <h3>Technology Used: Photoshop, Illustrator, InDesign</h3>
-                <br>
-                <p>My passion for design runs deep. I have years of experience designing brands, logos, and print collateral for clients.</p>
-              </div>
-            </div>
-            <div class="col-md-8 col-md-8-pad margin30bottom">
-              <a href="graphicdesign.html"><img src="img/graphics_.jpg" class="img-fluid projectimg"></a>
-            </div> -->
           </div>
         </div>
       </div>
@@ -511,8 +490,8 @@
 
 
 
-
-
+</div>
+</div>
 </div><!-- WRAPPER END -->
 
 
@@ -526,13 +505,13 @@ STR Dev & Design</p>
 
       <!-- bootstrap core js -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="js/localjqueryfull.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <!-- jquery link -->
 
-    <script src="js/localjqueryfull.js"></script>
 
     <!-- MY SCRIPTS -->
 
@@ -541,139 +520,196 @@ STR Dev & Design</p>
     <script type="text/javascript" src="js/tracking.js"></script>
 
 
-
-    <!-- Modal -->
-    <div class="modal fade"  id="windowsandwallsModal" tabindex="-1" role="dialog"  aria-labelledby="windowsandwallsModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
-      <input type="image" src="img/close.svg" class="closebutton" data-dismiss="modal"></input>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div  id="windowsandwallscarousel" class="carousel slide" data-bs-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active" >
-                  <img src="img/windowsandwalls/slide1.gif" class="d-block w-100" alt="...">
-                  <div class="carousel-caption">
-                    <h5>The Windows and Walls App Redesign</h5>
-                    <p>The app is a graphics ordering system with a client facing front end, and administrative job tracking system. It is used primarily by the beverage industry to place POS advertisements graphics in retail locations.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/windowsandwalls/LegacySystem.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption">
-                    <h5>The Old Windows And Walls App</h5>
-                    <p>The legacy version of the site was built exclusively for one client, and had a very rigid and out of date structure. A decision was made to create a new version of the app in a modern JS framework (VUE JS). This gave myself and the team an incredible opportunity to give an already highly utilized application a complete makeover.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-interval="false">
-                  <img src="img/windowsandwalls/ideation.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption">
-                    <h5>Ideation and Architecture Restructure</h5>
-                    <p>I began reverse engineering the old application. Breaking down the user flows, restructuring the site architecture, and identifying redundancy. Utilizing user feedback and UX best practices, I began prototyping in low fidelity and annotating instructions for the dev team.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/windowsandwalls/admin.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption">
-                    <h5>UX Problem</h5>
-                    <p>The legacy system did not allow for onboarding of new clients. Each client needs to have unique pricing, messaging, and asset management.</p>
-                    <h5>UX Solution</h5>
-                    <p>Design an admin backend that allows for full control of multiple clients. Create the ability for internal users to manage clients, options, pricing, and more through the interface. This greatly reduced the need for costly development time.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/windowsandwalls/HiFiProtoypeUserSide2.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption">
-                    <h5>UX Problem</h5>
-                    <p>The legacy system had a rigid user flow, users had to go through a strict set of sequential steps to submit an order, and could not revert back through decisions or mitigate errors</p>
-                    <h5>UX Solution</h5>
-                    <p>Create a user flow with more freedom and happy paths. Enable/disable interactive features to guide the user through the process. Provide better error recognition. Condense the UI to minimize the need for scrolling</p>
-                  </div>
-                </div>
-              </div>
-              <div class="controls-wrapper">
-                <ol class="carousel-indicators">
-                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="0" class="active"></li>
-                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="1"></li>
-                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="2"></li>
-                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="3"></li>
-                  <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="4"></li>
-                </ol>
-                <div class="carousel_controls_flex" data-interval="false">
-                  <a class="carousel-control-prev" href="#windowsandwallscarousel" role="button" data-slide="prev">
-                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
-                  </a>
-                  <a class="carousel-control-next" href="#windowsandwallscarousel" role="button" data-slide="next">
-                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade"  id="movieappModal" tabindex="-1" role="dialog"  aria-labelledby="movieappModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
-      <input type="image" src="img/close.svg" class="closebutton" data-dismiss="modal"></input>
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div  id="movieappcarousel" class="carousel slide" data-bs-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item active" >
-                  <img src="img/TMA/TMA1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA6.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item " >
-                  <img src="img/TMA/TMA7.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item " >
-                  <img src="img/TMA/TMA8.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item " >
-                  <img src="img/TMA/TMA9.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA10.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA11.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA12.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA13.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA14.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA15.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" >
-                  <img src="img/TMA/TMA16.jpg" class="d-block w-100" alt="...">
-                </div>
-              <div class="controls-wrapper">
-                <div class="carousel_controls_flex" data-interval="false">
-                  <a class="carousel-control-prev" href="#movieappcarousel" role="button" data-slide="prev">
-                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
-                  </a>
-                  <a class="carousel-control-next" href="#movieappcarousel" role="button" data-slide="next">
-                    <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
   </body>
+
+
+
+
+<!-- Graphics Modal -->
+  <div class="modal fade"  id="graphicsModal" tabindex="-1" role="dialog"  aria-labelledby="movieappModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
+    <input type="image" src="img/close.svg" id="closebutton" class="closebutton" data-dismiss="modal"></input>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div  id="graphiccarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="img/graphics/bcs1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/graphics/logos.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/graphics/orangetheory.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/graphics/eq.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/graphics/random_designs.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/graphics/random_designs_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/graphics/random_designs_3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/graphics/frozenapple.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/graphics/unitedpower.jpg" class="d-block w-100" alt="...">
+              </div>
+            <div class="controls-wrapper">
+              <div class="carousel_controls_flex" data-interval="false">
+                <a class="carousel-control-prev" href="#graphiccarousel" role="button" data-slide="prev">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
+                </a>
+                <a class="carousel-control-next" href="#graphiccarousel" role="button" data-slide="next">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Windows and Walls Modal -->
+  <div class="modal fade"  id="windowsandwallsModal" tabindex="-1" role="dialog"  aria-labelledby="windowsandwallsModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
+    <input type="image" src="img/close.svg" id="closebutton" class="closebutton" data-dismiss="modal"></input>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div  id="windowsandwallscarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="img/windowsandwalls/slide1.gif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>The Windows and Walls App Redesign</h5>
+                  <p>The app is a graphics ordering system with a client facing front end, and administrative job tracking system. It is used primarily by the beverage industry to place POS advertisements graphics in retail locations.</p>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="img/windowsandwalls/LegacySystem.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>The Old Windows And Walls App</h5>
+                  <p>The legacy version of the site was built exclusively for one client, and had a very rigid and out of date structure. A decision was made to create a new version of the app in a modern JS framework (VUE JS). This gave myself and the team an incredible opportunity to give an already highly utilized application a complete makeover.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-interval="false">
+                <img src="img/windowsandwalls/ideation.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>Ideation and Architecture Restructure</h5>
+                  <p>I began reverse engineering the old application. Breaking down the user flows, restructuring the site architecture, and identifying redundancy. Utilizing user feedback and UX best practices, I began prototyping in low fidelity and annotating instructions for the dev team.</p>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="img/windowsandwalls/admin.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>UX Problem</h5>
+                  <p>The legacy system did not allow for onboarding of new clients. Each client needs to have unique pricing, messaging, and asset management.</p>
+                  <h5>UX Solution</h5>
+                  <p>Design an admin backend that allows for full control of multiple clients. Create the ability for internal users to manage clients, options, pricing, and more through the interface. This greatly reduced the need for costly development time.</p>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img src="img/windowsandwalls/HiFiProtoypeUserSide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>UX Problem</h5>
+                  <p>The legacy system had a rigid user flow, users had to go through a strict set of sequential steps to submit an order, and could not revert back through decisions or mitigate errors</p>
+                  <h5>UX Solution</h5>
+                  <p>Create a user flow with more freedom and happy paths. Enable/disable interactive features to guide the user through the process. Provide better error recognition. Condense the UI to minimize the need for scrolling</p>
+                </div>
+              </div>
+            </div>
+            <div class="controls-wrapper">
+              <ol class="carousel-indicators">
+                <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="0" class="active"></li>
+                <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="1"></li>
+                <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="2"></li>
+                <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="3"></li>
+                <li class="projectbutton" data-target="#windowsandwallscarousel" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel_controls_flex" data-interval="false">
+                <a class="carousel-control-prev" href="#windowsandwallscarousel" role="button" data-slide="prev">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
+                </a>
+                <a class="carousel-control-next" href="#windowsandwallscarousel" role="button" data-slide="next">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Movie App Modal -->
+  <div class="modal fade"  id="movieappModal" tabindex="-1" role="dialog"  aria-labelledby="movieappModalLabel" aria-hidden="true" data-backdrop="false" style="background-color: rgba(0, 0, 0, 1);">
+    <input type="image" src="img/close.svg" id="closebutton" class="closebutton" data-dismiss="modal"></input>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div  id="movieappcarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="img/TMA/TMA1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/TMA/TMA7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/TMA/TMA8.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item " >
+                <img src="img/TMA/TMA9.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA10.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA11.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA12.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA13.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA14.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA15.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="img/TMA/TMA16.jpg" class="d-block w-100" alt="...">
+              </div>
+            <div class="controls-wrapper">
+              <div class="carousel_controls_flex" data-interval="false">
+                <a class="carousel-control-prev" href="#movieappcarousel" role="button" data-slide="prev">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0;left: 20px;" src="img/left.svg" class="projectbutton" aria-hidden="true">
+                </a>
+                <a class="carousel-control-next" href="#movieappcarousel" role="button" data-slide="next">
+                  <img style="margin-right: 0px; width: 50px; border-radius: 40px; position: fixed; bottom: 0; right:20px;" src="img/right.svg" class="projectbutton" aria-hidden="true">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
 </html>

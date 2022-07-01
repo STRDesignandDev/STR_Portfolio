@@ -770,24 +770,8 @@ display:none;
 }
 
 .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
     z-index: 100;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    justify-content: space-evenly;
-    width: 15%;
-    color: #fff;
-    text-align: center;
-    opacity: 1;
-    transition: opacity .15s ease;
-    /* margin-top: 375px; */
-    align-content: space-between;
-    flex-direction: row;
-    align-items: flex-end;
+    margin-top: 100px;
 }
 
 /* .carousel-item img{
@@ -811,4 +795,8 @@ display:none;
     border-top: 0px solid transparent;
     border-bottom: 0px solid transparent;
     width: 0px;
+}
+
+.hideme{
+  height: 0px;
 }

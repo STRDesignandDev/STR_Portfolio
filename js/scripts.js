@@ -241,7 +241,7 @@ function copyClipboard() {
 
 $(document).ready(function () {
   $('#windowsandwallscarousel').carousel({
-    interval: 10000,
+    interval: false,
     pause: "hover",
     wrap: true,
     keyboard: true
@@ -249,13 +249,13 @@ $(document).ready(function () {
 
   /* second carousel slidesshow */
   $('#movieappcarousel').carousel({
-    interval: 10000,
+    interval: false,
     wrap: true,
     keyboard: true
   });
 
   $('#graphiccarousel').carousel({
-    interval: 10000,
+    interval: false,
     wrap: true,
     keyboard: true
   });

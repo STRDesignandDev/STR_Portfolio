@@ -3,68 +3,68 @@
 var page_isolated = false;
 
 
-
-$( "#projectslink, #projectslink2" ).on('click', function() {
-    $('#projectssection').delay(800).fadeIn();
-    $('.bottom-section').hide();
-    $('.bottom-section').delay(800).fadeIn();
-    $('#aboutsection').fadeOut();
-    $('#contactsection').fadeOut();
-    $('.workcategories').hide(500);
-    $('.introcontent').hide(500);
-    $('.introcontent2').hide(500);
-    $('#heading_sticker1').delay(1000).fadeIn();
-    $('#heading_sticker2').fadeOut();
-    $('#heading_sticker3').fadeOut();
-    page_isolated = true;
-    $('.section_wrapper').css('padding-top', '50px');
-});
-
-$( "#aboutlink, #aboutlink2" ).on('click', function() {
-    $('#projectssection').fadeOut();
-    $('.bottom-section').hide();
-    $('.bottom-section').delay(800).fadeIn();
-    $('#contactsection').fadeOut();
-    $('#aboutsection').delay(800).fadeIn();
-    $('.workcategories').hide(500);
-    $('.introcontent').hide(500);
-    $('.introcontent2').hide(500);
-    $('#heading_sticker1').fadeOut();
-    $('#heading_sticker2').delay(1000).fadeIn();
-    $('#heading_sticker3').fadeOut();
-    page_isolated = true;
-    $('.section_wrapper').css('padding-top', '50px');
-});
-
-$( "#contactlink, #contactlink2" ).on('click', function() {
-    $('#contactsection').delay(800).fadeIn();
-    $('.bottom-section').hide();
-    $('.bottom-section').delay(800).fadeIn();
-    $('#projectssection').fadeOut();
-    $('#aboutsection').fadeOut();
-    $('.workcategories').hide(500);
-    $('.introcontent').hide(500);
-    $('.introcontent2').hide(500);
-    $('#heading_sticker1').fadeOut();
-    $('#heading_sticker2').fadeOut();
-    $('#heading_sticker3').delay(1000).fadeIn();
-    page_isolated = true;
-    $('.section_wrapper').css('padding-top', '50px');
-});
-
-$( "#homelink" ).on('click', function() {
-    $('#projectssection').delay(400).show(500);
-    $('#aboutsection').delay(400).show(500);;
-    $('#contactsection').delay(400).show(500);
-    $('.workcategories').show(500);
-    $('.introcontent').hide();
-    $('.introcontent2').show(500);
-    $('#heading_sticker1').show();
-    $('#heading_sticker2').show();
-    $('#heading_sticker3').show();
-    page_isolated = false;
-    $('.section_wrapper').css('padding-top', '76px');
-});
+//
+// $( "#projectslink, #projectslink2" ).on('click', function() {
+//     $('#projectssection').delay(800).fadeIn();
+//     $('.bottom-section').hide();
+//     $('.bottom-section').delay(800).fadeIn();
+//     $('#aboutsection').fadeOut();
+//     $('#contactsection').fadeOut();
+//     $('.workcategories').hide(500);
+//     $('.introcontent').hide(500);
+//     $('.introcontent2').hide(500);
+//     $('#heading_sticker1').delay(1000).fadeIn();
+//     $('#heading_sticker2').fadeOut();
+//     $('#heading_sticker3').fadeOut();
+//     page_isolated = true;
+//     $('.section_wrapper').css('padding-top', '50px');
+// });
+//
+// $( "#aboutlink, #aboutlink2" ).on('click', function() {
+//     $('#projectssection').fadeOut();
+//     $('.bottom-section').hide();
+//     $('.bottom-section').delay(800).fadeIn();
+//     $('#contactsection').fadeOut();
+//     $('#aboutsection').delay(800).fadeIn();
+//     $('.workcategories').hide(500);
+//     $('.introcontent').hide(500);
+//     $('.introcontent2').hide(500);
+//     $('#heading_sticker1').fadeOut();
+//     $('#heading_sticker2').delay(1000).fadeIn();
+//     $('#heading_sticker3').fadeOut();
+//     page_isolated = true;
+//     $('.section_wrapper').css('padding-top', '50px');
+// });
+//
+// $( "#contactlink, #contactlink2" ).on('click', function() {
+//     $('#contactsection').delay(800).fadeIn();
+//     $('.bottom-section').hide();
+//     $('.bottom-section').delay(800).fadeIn();
+//     $('#projectssection').fadeOut();
+//     $('#aboutsection').fadeOut();
+//     $('.workcategories').hide(500);
+//     $('.introcontent').hide(500);
+//     $('.introcontent2').hide(500);
+//     $('#heading_sticker1').fadeOut();
+//     $('#heading_sticker2').fadeOut();
+//     $('#heading_sticker3').delay(1000).fadeIn();
+//     page_isolated = true;
+//     $('.section_wrapper').css('padding-top', '50px');
+// });
+//
+// $( "#homelink" ).on('click', function() {
+//     $('#projectssection').delay(400).show(500);
+//     $('#aboutsection').delay(400).show(500);;
+//     $('#contactsection').delay(400).show(500);
+//     $('.workcategories').show(500);
+//     $('.introcontent').hide();
+//     $('.introcontent2').show(500);
+//     $('#heading_sticker1').show();
+//     $('#heading_sticker2').show();
+//     $('#heading_sticker3').show();
+//     page_isolated = false;
+//     $('.section_wrapper').css('padding-top', '76px');
+// });
 
 // Set up listeners for screen size
 
